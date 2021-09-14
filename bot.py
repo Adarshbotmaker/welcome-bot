@@ -9,7 +9,7 @@ def start(updater,context):
  updater.message.reply_text('''Hi iam welcome messanger bot 
 Add me to your group 
  
- Made with Love ❤️ by @lntechnical
+ Made by @phantombotupdates
 
   ''')
 def help(updater,context):
@@ -25,7 +25,7 @@ updater.dispatcher.add_handler(add_group_handle)
 
 dp =updater.dispatcher.add_handler
 dp(CommandHandler('start',start))
-dp(CommandHandler('help',help))
+CommandHandler('help',help))
 
 updater.start_polling()
 updater.idle()
