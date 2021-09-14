@@ -1,0 +1,27 @@
+{
+    "name": "A Telegram Bot for welcome",
+    "description": "A Telegram Bot for welcome",
+    "keywords": [
+        "telegram",
+        "bot"
+    ],
+    "repository": "https://github.com/Adarshbotmaker/welcome-bot",
+    "website": "https://github.com/Adarshbotmaker/welcome-bot",
+    "success_url": "https://github.com/Adarshbotmaker/welcome-boty",
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Get this value from @BotFather"
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
